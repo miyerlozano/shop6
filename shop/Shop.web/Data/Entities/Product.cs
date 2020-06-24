@@ -5,9 +5,14 @@ public class Product
 {
 	public int Id { get; set; }
 
+	[Display(Name = "Servicio")]
+	[MaxLength(100)]
+	[Required]
 	public string Name { get; set; }
 
 	[Display(Name = "Descripcion")]
+	[MaxLength(200)]
+	[Required]
 	public string Descripcion { get; set; }
 
 	[Display(Name = "Image")]
@@ -15,11 +20,16 @@ public class Product
 
 
 	[Display(Name = "Direccion")]
+	[MaxLength(100)]
+	[Required]
 	public string Direccion { get; set; }
 
 	[Display(Name = "Contacto")]
-	public bool Contacto { get; set; }
+	[MaxLength(50)]
+	[Required]
+	public string Contacto { get; set; }
 
 	[Display(Name = "Disponible")]
-	public bool Disponible { get; set; }
+	[Required]
+	public string Disponible { get; set; }
 }
