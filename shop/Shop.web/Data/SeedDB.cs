@@ -10,7 +10,7 @@ namespace Shop.web.Data
     public class SeedDb
     {
         private readonly DataContext context;
-        private Random random;
+        private readonly Random random;
 
         public SeedDb(DataContext context)
         {
